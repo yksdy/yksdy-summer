@@ -1,4 +1,4 @@
-package yksdy.algorithm;
+package yksdy.algorithm.demo;
 
 import java.util.HashSet;
 import java.util.Set;

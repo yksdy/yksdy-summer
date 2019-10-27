@@ -1,11 +1,11 @@
-package yksdy.algorithm;
+package yksdy.algorithm.other;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
 
-public class Leetcod_3 {
+public class Leetcode3 {
     public static void main(String[] args) {
 //        test1();
 //        test31();
