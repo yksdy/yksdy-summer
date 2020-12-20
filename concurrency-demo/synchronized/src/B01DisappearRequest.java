@@ -1,7 +1,6 @@
 
-public class A01DisappearRequest implements Runnable{
-    private static A01DisappearRequest instanc = new A01DisappearRequest();
-    private static int i = 0;
+public class B01DisappearRequest  {
+    private static MyThread instanc = new MyThread();
 
     public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(instanc);
@@ -13,14 +12,20 @@ public class A01DisappearRequest implements Runnable{
         t1.join();
         t2.join();
 
-        System.out.println(i);
+        System.out.println(Data.i);
 
     }
+}
 
+class Data{
+    static int i = 0;
+}
+
+class MyThread implements Runnable{
     @Override
     public void run() {
         for(int x = 0; x<3000; x++ ){
-            i++;
+            Data.i++;
         }
     }
 }
